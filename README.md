@@ -84,7 +84,7 @@ Because, when this library was written:
 - there is no HPKE implementation in golang's standard library, or even in golang.org/x/crypto; and
 - using [HPKE](https://developer.apple.com/documentation/cryptokit/hpke) would not allow any messages to be missed or dropped, and one of the author's use-case for this library actually *requires* some messages to be missed or dropped (for example, this is useful for [calmdocs/SwiftStreamManager](https://github.com/calmdocs/SwiftStreamManager)).
 
-We will probably add [HPKE](https://developer.apple.com/documentation/cryptokit/hpke) to this library, as well as to [calmdocs/keyexchange](https://github.com/calmdocs/keyexchange) at some point.
+We will probably add [HPKE](https://developer.apple.com/documentation/cryptokit/hpke) to this library, as well as to its golang counterpart ([calmdocs/keyexchange](https://github.com/calmdocs/keyexchange)) at some point.
 
 
 
