@@ -13,12 +13,12 @@ import CryptoKit
 public struct KeyExchangeAEADStore: Codable, Identifiable {
     public var id: String {ciphertext}
     
-    var kdfNonce: String
-    let ciphertext: String
-    var aeadNonce: String
-    var additionalData: String
+    public var kdfNonce: String
+    public let ciphertext: String
+    public var aeadNonce: String
+    public var additionalData: String
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case kdfNonce = "KDFNonce"
         case ciphertext = "Ciphertext"
         case aeadNonce = "AEADNonce"
@@ -28,15 +28,15 @@ public struct KeyExchangeAEADStore: Codable, Identifiable {
 
 /// Holds an elliptic-curve cryptography (ECC) private key and public key.
 public struct KeyExchangeLocalKeys {
-    var privateKey: String
-    var publicKey: String
+    public var privateKey: String
+    public var publicKey: String
 }
 
 /// Generic struct to hold type, id, and data Strings.
 public struct KeyExchangeTypeIDAndData: Codable {
-    let type: String
-    let id:   String
-    let data: String
+    public let type: String
+    public let id:   String
+    public let data: String
     
     public enum CodingKeys: String, CodingKey {
         case type = "Type"
