@@ -73,7 +73,7 @@ print(plaintext == bobPlaintext)
 
 ## Security approach
 
-We have been as conservative as possible when creating this library.  For example, we have only used Apple's Cryptokit library, and have not used any third party cryptography libraries to create this package.  We will try to follow SemVer, but may not if there are security issues and/or as the underlying encryption used by this library becomes insecure over time. 
+As mentioned above, we have been as conservative as possible when creating this library.  For example, we have only used Apple's Cryptokit library, and have not used any third party cryptography libraries to create this package.  We will try to follow SemVer, but may not if there are security issues and/or as the underlying encryption used by this library becomes insecure over time. 
 
 Please notify us of any security issues by creating a github issue. Please propose how you would like to securely communicate with us (via email or other communication method). Please do not post the security issue on github.  
 
