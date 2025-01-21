@@ -35,7 +35,7 @@ let bobStore = try KeyExchangeStore(
     externalPublicKey: "",
 )
 
-// Add privacte keys to the stores.
+// Add private keys to the stores.
 try! aliceStore.setExternalPublicKey(bobStore.LocalPublicKey())
 try! bobStore.setExternalPublicKey(aliceStore.LocalPublicKey())
 
