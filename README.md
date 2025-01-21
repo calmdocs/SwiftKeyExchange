@@ -23,7 +23,7 @@ let aliceStore = try KeyExchangeStore(
     using: hashFunction,
     kdf: kdf,
     aead: aead,
-    externalPublicKey: ""
+    externalPublicKey: "" // a new public key is created if this string is left empty
 )
 
 // bob store
@@ -32,7 +32,7 @@ let bobStore = try KeyExchangeStore(
     using: hashFunction,
     kdf: kdf,
     aead: aead,
-    externalPublicKey: "",
+    externalPublicKey: "", // a new public key is created if this string is left empty
 )
 
 // Add private keys to the stores.
